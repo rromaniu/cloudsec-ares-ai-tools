@@ -24,6 +24,7 @@ Subagents should report instruction conflicts to the parent, who resolves them w
 Subagents inherit the parent's sandbox, approvals, permissions, provider, and MCP servers; role instructions do not change these boundaries.
 If a required tool or permission is unavailable, the subagent should report the limitation to the parent.
 Before implementing or assigning implementation, inspect the current branch and working-tree changes.
+Write commit messages that describe the change without including the branch name or Jira key, unless the user or project instructions require it.
 Determine whether existing commits or uncommitted changes are part of the user's task; preserve relevant work and describe it in any developer assignment.
 Continue task-related work already in progress without discarding or recreating it.
 Create or switch branches only after accounting for existing changes.
