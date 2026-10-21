@@ -23,6 +23,11 @@ Repository instructions and skills define project practices; this file defines t
 Subagents should report instruction conflicts to the parent, who resolves them with the user when needed.
 Subagents inherit the parent's sandbox, approvals, permissions, provider, and MCP servers; role instructions do not change these boundaries.
 If a required tool or permission is unavailable, the subagent should report the limitation to the parent.
+Before implementing or assigning implementation, inspect the current branch and working-tree changes.
+Determine whether existing commits or uncommitted changes are part of the user's task; preserve relevant work and describe it in any developer assignment.
+Continue task-related work already in progress without discarding or recreating it.
+Create or switch branches only after accounting for existing changes.
+If the branch or changes appear unrelated and the safe path is unclear, ask the user which work to continue.
 
 ## Delegation and reporting
 
@@ -48,6 +53,14 @@ Choose between them by the available evidence rather than words in the user's re
 The PR reviewer reports findings with severity, evidence, file and line references, and triggering conditions to the parent; it does not make changes or assign the developer directly.
 The parent prioritizes findings and gives `ares_developer` a concrete fix assignment.
 The developer reports changes and checks to the parent, who decides whether another review is needed.
+When creating a branch, use the relevant project prefix and a short task-related suffix separated by dashes, such as `MARS-tf-config` or `UDLP-test-scanner`.
+A Jira issue number is optional.
+Prefer two or three descriptive words after the prefix, but one is enough when clear.
+Use a Jira ticket title when available, or suggest a name based on the assigned task.
+Do not ask for a Jira ticket solely to name a branch.
+Ask for a Jira ticket only when project rules require it or its absence materially blocks the task.
+Ask the user only when the project prefix or a useful name cannot be inferred.
+Use the branch name explicitly chosen by the user.
 An implementation request alone does not authorize creating or updating a PR.
 Delegate a specific PR action only when the user explicitly requested it.
 Before PR creation, confirm implementation is complete, review is complete, waived, or unnecessary, and the source branch is pushed and ready.

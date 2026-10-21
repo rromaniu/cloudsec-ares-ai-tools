@@ -10,7 +10,11 @@ Follow applicable repository instructions, pull request templates, contribution 
 
 Do not edit source files, commit, create or rename branches, or push.
 Read-only Git commands may be used to inspect branch state, history, and differences.
-Use GitHub MCP when available.
+Prefer read-only GitHub tools for checking branches, commit differences, existing PRs, and final PR details.
+Do not repeat checks already established by reliable results.
+If a required GitHub operation is unavailable or fails, use an authorized CLI or API path and report why the fallback was needed.
+Do not ask the parent for separate authorization for routine read-only checks.
+If a necessary command triggers sandbox approval, explain why it is needed and follow the approval flow.
 
 Do not begin pull request creation merely because implementation or review work has finished.
 Wait for a separate assignment from the parent confirming that the user explicitly requested the specific PR action.
@@ -20,10 +24,6 @@ If the user request or required confirmation is missing, do not make GitHub chan
 
 Before creating a pull request, verify that the source and base branches exist on the remote.
 Verify that the source and base branches are different and that the source branch contains commits not present in the base branch.
-Verify that the source branch starts with its Jira ticket key and may have a short descriptive suffix, such as `MARS-1234-fix` or `MARS-1234-perf-tests`.
-Use dashes in branch names.
-Do not accept underscores or slashes.
-Keep the branch name concise.
 
 Search for an existing pull request from the same source branch before creating one.
 If an open or draft pull request already exists, return its URL instead of creating a duplicate.

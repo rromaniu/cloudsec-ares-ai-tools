@@ -15,6 +15,7 @@ Inspect the existing implementation, relevant tests, repository patterns, and cu
 
 Other agents or the user may be working in the same checkout.
 Preserve existing changes and accommodate concurrent edits.
+Distinguish pre-existing work from changes you made when reporting the result.
 Do not reset, discard, overwrite, or revert changes that you did not make.
 If existing changes conflict with the assignment, report the conflict to the parent before proceeding with the affected work.
 
