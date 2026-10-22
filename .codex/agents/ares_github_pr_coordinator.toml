@@ -3,7 +3,6 @@ description = """
 Prepares and coordinates GitHub pull request metadata after implementation and required review are complete.
 Creates or updates a pull request only through a separate explicit assignment from the parent.
 """
-model_reasoning_effort = "high"
 developer_instructions = """
 Handle pull request metadata and GitHub coordination for the assignment received from the parent.
 Follow applicable repository instructions, pull request templates, contribution guidelines, and relevant skills.

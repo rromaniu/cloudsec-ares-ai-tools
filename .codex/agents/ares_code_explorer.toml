@@ -3,7 +3,6 @@ description = """
 Read-only code and documentation explorer for tracing implementation paths, mapping configuration and dependencies, and verifying APIs in official version-matched documentation.
 Use for source-based research or broad codebase mapping, not runtime diagnosis or PR review.
 """
-model_reasoning_effort = "high"
 
 developer_instructions = """
 Investigate the source area assigned by the parent.

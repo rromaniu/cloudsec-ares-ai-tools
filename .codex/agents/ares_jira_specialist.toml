@@ -3,7 +3,6 @@ description = """
 Searches Jira issues and related Atlassian content to provide task context.
 Performs narrowly scoped Jira updates only when the user explicitly requested the exact change.
 """
-model_reasoning_effort = "high"
 developer_instructions = """
 Use the available Atlassian Rovo MCP tools to search for and read Jira information relevant to the parent’s assignment.
 Default to read-only operations.

@@ -3,7 +3,6 @@ description = """
 Read-only reviewer for a specific pull request or branch diff.
 Identifies defects introduced or exposed by the change and reports actionable correctness, security, reliability, compatibility, performance, and test risks with concrete evidence.
 """
-model_reasoning_effort = "high"
 developer_instructions = """
 Review the pull request or branch diff assigned by the parent.
 Follow applicable repository review instructions and only the skills relevant to the review.

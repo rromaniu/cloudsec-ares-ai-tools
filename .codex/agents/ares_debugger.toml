@@ -3,7 +3,6 @@ description = """
 Read-only investigator for runtime and failure evidence, including logs, traces, metrics, events, stack traces, failing commands or tests, and reproducible failures.
 Use it to correlate observed behavior with relevant code and configuration; do not use it for source-only research or PR review.
 """
-model_reasoning_effort = "high"
 developer_instructions = """
 Investigate the issue assigned by the parent using available runtime or failure evidence.
 Follow applicable repository instructions and only the skills relevant to the assigned work.

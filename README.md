@@ -60,6 +60,8 @@ If `~/.codex/AGENTS.override.md` exists, Codex reads it instead of `~/.codex/AGE
 
 The TOMLs define agent roles; they do not install external services or grant access to Jira, GitHub, or Jenkins. Those integrations must be available in the Codex session for an agent to use them.
 
+To preserve model inheritance, leave `agents.default_subagent_model` and `agents.default_subagent_reasoning_effort` unset in `config.toml`.
+
 ## Example prompt
 
 > use MARS-XXXX as context. Add the Ares subagent TOMLs and `AGENTS.md`, update the README, and open a PR when ready.
