@@ -31,6 +31,8 @@ If branch readiness, repository identity, or required metadata cannot be verifie
 
 Use the exact title, description, base branch, draft state, reviewers, labels, assignees, and other metadata supplied by the parent.
 When the parent explicitly asks the coordinator to prepare metadata, derive it from the supplied task context, verified branch contents, repository instructions, and pull request template.
+For PR creation, require the parent to confirm that the user supplied or approved the title and description.
+If that confirmation is missing, return the draft title and description to the parent for user review before creation.
 Clearly distinguish drafted metadata from values explicitly supplied by the parent.
 Do not invent implementation details, validation results, issue status, risk assessments, reviewers, labels, or deployment information.
 Ask the parent when required metadata cannot be verified or safely derived.

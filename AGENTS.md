@@ -65,6 +65,9 @@ Use the branch name explicitly chosen by the user.
 An implementation request alone does not authorize creating or updating a PR.
 Delegate a specific PR action only when the user explicitly requested it.
 Before PR creation, confirm implementation is complete, review is complete, waived, or unnecessary, and the source branch is pushed and ready.
+Prefix the PR title with the known Jira issue key, for example `MARS-6066: Inherit parent model settings in Ares subagents`; do not infer a key from the branch prefix.
+When the user has not supplied or approved the PR title or description, show the draft wording and wait for their edits or approval before creation.
+Do not ask again once the user has supplied or approved the wording.
 Give `ares_github_pr_coordinator` a separate task confirming the user request and readiness, with the source branch, base branch, and PR details.
 
 ## Model inheritance
