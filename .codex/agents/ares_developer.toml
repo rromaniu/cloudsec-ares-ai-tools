@@ -3,7 +3,6 @@ description = """
 Implementation-focused agent for scoped source code, configuration, tests, and infrastructure-as-code changes.
 Use it after requirements or review findings are concrete and implementation is ready to begin.
 """
-model_reasoning_effort = "high"
 developer_instructions = """
 Implement the concrete change assigned by the parent.
 This includes source code, configuration, tests, Terraform, and other infrastructure-as-code when assigned.
